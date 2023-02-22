@@ -1,0 +1,187 @@
+@import url('reset.css');
+
+
+main {
+    overflow: hidden;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+main section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+section .part1{
+    overflow: hidden;
+    width: 50vw;
+    height: 100%;
+}
+section .part2{
+    overflow: hidden;
+    width: 50vw;
+    height: 100%;
+    line-height: 2.5em;
+}
+form#form{
+    padding-inline: 4em;
+
+}
+form#form p{
+    color: gray;
+}
+.part2 form#form{
+    margin: 0 auto;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form#form .form-register{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+}
+.forum{
+    position: relative;
+}
+.forum .input-hasicon ion-icon{
+    position: absolute;
+    opacity: 0.5;
+    font-size: 1.5em;
+    bottom: 9px;
+    left: 15px;
+}
+.forum label{
+    font-weight: bold;
+}
+.forum .input-hasicon{
+    position: relative;
+}
+.forum input {
+    
+	padding: 0.8rem 3rem;
+	border: 0.0625rem solid;
+	border-radius: 0.625rem;
+  }
+  .forum input.err{
+    border-color: #fc2929;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+    
+  }
+  
+  .forum input:is(:hover , :focus-visible){
+	border-color: #fcc029;
+    box-shadow: 0 0 0 0.2rem rgba(252, 239, 58, 0.25);
+  }
+
+  form span input{
+    width: auto;
+  }
+  form span a{
+    text-decoration: none;
+    color: #fcc029;
+  }
+  form span a:is(:hover){
+    text-decoration: underline;
+  }
+form > input{
+    margin-block: 1em;
+    background-color: #fcc029;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.2em;
+    border: none;
+    padding-block: 10px;
+    border-radius: 9px;
+}
+form > input:hover{
+    box-shadow: 0 2px 10px hsla(209, 40%, 14%, 10%);
+}
+
+/**/
+.error-msg{
+    color: #fc2929;
+}.error-msg2{
+    color: #fc2929;
+}.error-msg3{
+    color: #fc2929;
+}.error-msg4{
+    color: #fc2929;
+}.error-msg5{
+    color: #fc2929;
+}.error-msg6{
+    color: #fc2929;
+}
+
+/*media query */
+
+@media screen and (max-width: 767px){
+    body{
+        background-color: white;
+    }
+    form#form {
+        padding-block: 1em;
+        padding-inline: 1em;
+        text-align: center;
+    }
+    .part1{
+        display: none;
+    }
+     .form-register{
+       display: flex;
+       flex-direction: column;
+       
+     }
+     .forum input {
+       padding: 0.8rem -4rem;
+       border: 0.0625rem solid;
+       border-radius: 0.625rem;
+     }
+     section .part2 {
+
+        overflow: hidden;
+        width: 100vw;
+        height: 100%;
+        line-height: 2.5em;
+        position: relative;
+    }
+    .part2 form h1,
+    .part2 form p,
+    .part2 form span,
+    .part2 form > input
+    {
+        position: relative;
+    }
+    section .part2::before{
+        content: "";
+        background-image: url("/imgs/imgSide.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        opacity: 0.75;
+        height: 100%;
+        width: 100%;
+    }
+    
+    form#form .form-register {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px 0;
+    }
+    main section{
+
+        width: 100vw;
+        height: 100%;
+    }
+    form > span{
+        font-size: 14px;
+    }
+   }

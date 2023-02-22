@@ -1,0 +1,102 @@
+
+main{
+    overflow: hidden;
+    height: 100%;
+}
+main section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+section .part1{
+    overflow: hidden;
+    width: 50vw;
+    height: 100%;
+}
+section .part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.part2 form{
+    line-height: 2.8em;
+}
+.part2 form p{
+    color: gray;
+
+}
+
+.forum input {
+	padding: 0.8rem 3rem;
+	border: 0.0625rem solid;
+	border-radius: 0.625rem;
+  }
+  .forum input:is(:hover , :focus-visible){
+	border-color: #fcc029;
+    box-shadow: 0 0 0 0.2rem rgba(255, 238, 0, 0.25);
+  }
+  
+div.pssw input{
+    padding-inline-end:12px;
+}
+
+
+div.pssw ,
+div.eml {
+    position: relative;
+}
+
+
+div.eml ion-icon{
+    position: absolute;
+    bottom: 12px;
+    left: 18px;
+    opacity: 0.5;
+    font-size: 1.3em;
+}div.pssw ion-icon{
+    position: absolute;
+    bottom: 12px;
+    left: 18px;
+    opacity: 0.5;
+    font-size: 1.3em;
+}
+form > input{
+    margin-block: 1em;
+    background-color: #fcc029;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+form > input:hover{
+    box-shadow: 0 2px 10px hsla(209, 40%, 14%, 10%);
+}
+div.pssw label{
+    display: flex;
+    justify-content: space-between;
+    
+}
+div.eml label span,
+div.pssw label span{
+    font-weight: 700;
+}
+label a{
+    color: #fcc029;
+    font-weight: 600;
+}a:is(:hover){
+    text-decoration: underline;
+}
+form > a{
+    color: #fcc029;
+    font-weight: 600;
+    justify-content: flex-end;
+    display: flex;
+}
