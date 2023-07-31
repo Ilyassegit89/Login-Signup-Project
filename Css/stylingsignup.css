@@ -72,6 +72,11 @@ form#form .form-register{
     box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
     
   }
+  .forum input.gren{
+    border-color: #29fc4c;
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 21, 0.25);
+    
+  }
   
   .forum input:is(:hover , :focus-visible){
 	border-color: #fcc029;
@@ -105,16 +110,6 @@ form > input:hover{
 
 /**/
 .error-msg{
-    color: #fc2929;
-}.error-msg2{
-    color: #fc2929;
-}.error-msg3{
-    color: #fc2929;
-}.error-msg4{
-    color: #fc2929;
-}.error-msg5{
-    color: #fc2929;
-}.error-msg6{
     color: #fc2929;
 }
 
